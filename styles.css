@@ -1,0 +1,17 @@
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	height: 800px;
+	width: 800px;
+	border: 12px;
+	border-style: solid;
+	border-color: #960606;
+}
+
+.grid-square {
+	outline: 1px solid black;
+}
+
+button {
+	margin-bottom: 8px;
+}
