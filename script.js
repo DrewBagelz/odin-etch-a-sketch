@@ -21,12 +21,9 @@ function etchSetUp(squares) {
 
 function promptUser() {
 	let squares = Number(prompt("Choose number of squares for each axis:", ""));
-	if (squares <= 100) {
-		container.replaceChildren();
-		etchSetUp(squares);
-	} else {
-		let squares = Number(prompt("Please choose a number from 1 to 100:", ""));
-		container.replaceChildren();
-		etchSetUp(squares);
+	while (squares > 100 || squares < 1 || isNaN(squares)) {
+		squares = Number(prompt("Please choose a number from 1 to 100:", ""));
 	}
+	container.replaceChildren();
+	etchSetUp(squares);
 }
