@@ -2,6 +2,7 @@ const container = document.querySelector(".container");
 const button = document.querySelector("button");
 
 etchSetUp(16);
+button.addEventListener("click", promptUser);
 
 function etchSetUp(squares) {
 	for (let i = 0; i < `${squares}` * `${squares}`; i++) {
